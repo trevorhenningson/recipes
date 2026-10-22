@@ -1,0 +1,40 @@
+{
+  "slug": "chicken-tikka-masala",
+  "title": "Chicken Tikka Masala",
+  "tags": ["chicken"],
+  "servings": 4,
+  "prepMinutes": 20,
+  "cookMinutes": 40,
+  "description": "Yogurt-marinated chicken in a creamy tomato sauce.",
+  "components": [
+    {
+      "name": "Marinade",
+      "ingredients": [
+        { "id": "chicken-thigh", "quantity": 1.5, "unit": "lb", "prep": "cut into 1-inch pieces" },
+        { "id": "plain-yogurt", "quantity": 1, "unit": "cup" },
+        { "id": "garam-masala", "quantity": 2, "unit": "tsp" },
+        { "id": "garlic", "quantity": 3, "unit": "clove", "prep": "minced" }
+      ]
+    },
+    {
+      "name": "Sauce",
+      "ingredients": [
+        { "id": "butter", "quantity": 2, "unit": "tbsp" },
+        { "id": "onion", "quantity": 1, "unit": "whole", "prep": "diced" },
+        { "id": "crushed-tomato", "quantity": 1, "unit": "can", "note": "28 oz" },
+        { "id": "heavy-cream", "quantity": 1, "unit": "cup" },
+        { "id": "cilantro", "quantity": null, "unit": null, "optional": true, "prep": "chopped, to garnish" },
+        { "id": "salt", "quantity": null, "unit": null, "note": "to taste" }
+      ]
+    }
+  ],
+  "steps": [
+    "Combine the marinade ingredients and refrigerate the chicken for at least 1 hour.",
+    "Melt the butter and soften the onion over medium heat, about 8 minutes.",
+    "Add the tomatoes and simmer 15 minutes, then stir in the cream.",
+    "Broil or pan-sear the chicken until charred, add it to the sauce, and simmer 10 minutes.",
+    "Season with salt and garnish with cilantro."
+  ],
+  "source": { "name": "Family recipe" },
+  "notes": ["Freezes well for up to 3 months."]
+}

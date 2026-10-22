@@ -1,0 +1,38 @@
+{
+  "slug": "black-bean-soup",
+  "title": "Black Bean Soup",
+  "tags": ["soup", "vegetarian", "vegan", "quick"],
+  "servings": 4,
+  "prepMinutes": 10,
+  "cookMinutes": 20,
+  "description": "Pantry soup with cumin, lime and a smoky finish.",
+  "components": [
+    {
+      "name": "Soup",
+      "ingredients": [
+        { "id": "olive-oil", "quantity": 2, "unit": "tbsp" },
+        { "id": "onion", "quantity": 1, "unit": "whole", "prep": "diced" },
+        { "id": "garlic", "quantity": 2, "unit": "clove", "prep": "minced" },
+        { "id": "cumin", "quantity": 2, "unit": "tsp" },
+        { "id": "smoked-paprika", "quantity": 1, "unit": "tsp" },
+        { "id": "black-bean", "quantity": 2, "unit": "can", "note": "15 oz each, drained" },
+        { "id": "vegetable-broth", "quantity": 3, "unit": "cup" },
+        { "id": "salt" },
+        { "id": "black-pepper" }
+      ]
+    },
+    {
+      "name": "To serve",
+      "ingredients": [
+        { "id": "lime", "quantity": 1, "unit": "whole", "prep": "cut into wedges" },
+        { "id": "cilantro", "optional": true, "prep": "chopped" },
+        { "id": "avocado", "quantity": 1, "unit": "whole", "optional": true, "prep": "diced" }
+      ]
+    }
+  ],
+  "steps": [
+    "Soften the onion in the oil over medium heat, about 6 minutes. Add the garlic, cumin and paprika and cook 1 minute.",
+    "Add the beans and broth, simmer 10 minutes, then blend about half the soup and stir it back in.",
+    "Season with salt and pepper and serve with lime, cilantro and avocado."
+  ]
+}

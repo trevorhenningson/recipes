@@ -1,0 +1,33 @@
+name: Suggest a recipe
+description: Propose a new recipe for trevorhenningson.net/recipeApp
+title: "Recipe suggestion: "
+labels: [suggestion]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        The easiest way to fill this in is the [recipe builder](https://trevorhenningson.net/recipeApp/suggest), which opens this form already filled.
+        A bot turns valid suggestions into a pull request for review. Nothing is published until it is merged.
+  - type: textarea
+    id: recipe_json
+    attributes:
+      label: Recipe JSON
+      description: One recipe in the format described in schema/recipe.schema.json.
+      render: json
+    validations:
+      required: true
+  - type: textarea
+    id: new_ingredients
+    attributes:
+      label: New ingredients
+      description: Optional. A JSON array of ingredients not yet in ingredients.json.
+      render: json
+    validations:
+      required: false
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for the reviewer
+      description: Optional. Where the recipe comes from, substitutions, anything else.
+    validations:
+      required: false

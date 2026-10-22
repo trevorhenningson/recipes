@@ -1,0 +1,58 @@
+name: Suggestion to pull request
+
+on:
+  issues:
+    types: [opened, edited, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: suggestion-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  convert:
+    if: github.event.issue.state == 'open' && contains(github.event.issue.labels.*.name, 'suggestion')
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE_NUMBER: ${{ github.event.issue.number }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      # The issue body is passed through an environment variable, never interpolated into the script.
+      - id: apply
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          if npm run -s issue-to-pr; then echo "ok=true" >> "$GITHUB_OUTPUT"; else echo "ok=false" >> "$GITHUB_OUTPUT"; fi
+
+      - if: steps.apply.outputs.ok == 'false'
+        run: |
+          gh label create needs-changes --color d93f0b --description "Suggestion failed validation" --force
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/suggestion-errors.md"
+          gh issue edit "$ISSUE_NUMBER" --add-label needs-changes
+
+      - if: steps.apply.outputs.ok == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: suggestion/${{ github.event.issue.number }}-${{ steps.apply.outputs.slug }}
+          title: Add ${{ steps.apply.outputs.title }}
+          body-path: ${{ steps.apply.outputs.body_path }}
+          commit-message: "feat: add ${{ steps.apply.outputs.slug }} (from #${{ github.event.issue.number }})"
+          add-paths: |
+            recipes/*.json
+            ingredients.json
+          labels: suggestion
+          delete-branch: true
+
+      - if: steps.apply.outputs.ok == 'true'
+        run: gh issue edit "$ISSUE_NUMBER" --remove-label needs-changes || true

@@ -1,0 +1,24 @@
+{
+  "name": "recipes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Recipe collection for trevorhenningson.net/recipeApp",
+  "type": "module",
+  "license": "CC-BY-4.0",
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "build": "tsx scripts/build.ts",
+    "issue-to-pr": "tsx scripts/issue-to-pr.ts",
+    "test": "tsx --test scripts/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "json-schema-to-typescript": "^15.0.4",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": { "node": ">=22" }
+}

@@ -1,0 +1,16 @@
+[
+  { "id": "beef", "name": "Beef" },
+  { "id": "chicken", "name": "Chicken" },
+  { "id": "pork", "name": "Pork" },
+  { "id": "fish", "name": "Fish" },
+  { "id": "seafood", "name": "Seafood" },
+  { "id": "vegetarian", "name": "Vegetarian" },
+  { "id": "vegan", "name": "Vegan" },
+  { "id": "soup", "name": "Soup" },
+  { "id": "salad", "name": "Salad" },
+  { "id": "pasta", "name": "Pasta" },
+  { "id": "dessert", "name": "Dessert" },
+  { "id": "breakfast", "name": "Breakfast" },
+  { "id": "side", "name": "Side" },
+  { "id": "quick", "name": "Quick (under 30 min)" }
+]
