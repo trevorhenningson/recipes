@@ -38,6 +38,7 @@ const ts = await compile({ ...defsOnly, title: "RecipeSchema", type: "object" } 
   bannerComment:
     "/* Generated from schema/recipe.schema.json in trevorhenningson/recipes. Do not edit by hand.\n   Regenerate with `npm run build` there and copy dist/types.ts here. */",
   unreachableDefinitions: true,
+  ignoreMinAndMaxItems: true, // plain arrays; the schema still enforces minItems
   additionalProperties: false,
   format: true,
   style: { singleQuote: false, semi: true },
