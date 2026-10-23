@@ -1,0 +1,67 @@
+{
+  "slug": "spaghetti-and-meat-sauce",
+  "title": "Spaghetti and Meat Sauce",
+  "tags": [
+    "beef",
+    "pasta"
+  ],
+  "servings": 4,
+  "description": "Simple Spaghetti and Meat Sauce",
+  "components": [
+    {
+      "name": null,
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "quantity": 1,
+          "unit": "lb"
+        },
+        {
+          "id": "all-purpose-flour",
+          "quantity": 4,
+          "unit": "tbsp"
+        },
+        {
+          "id": "garlic-powder",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": "2-4"
+        },
+        {
+          "id": "salt",
+          "quantity": 2,
+          "unit": "tsp",
+          "note": "2-4"
+        },
+        {
+          "id": "spaghetti",
+          "quantity": 0.5,
+          "unit": "lb"
+        },
+        {
+          "id": "spaghetti-sauce",
+          "quantity": 1,
+          "unit": "can"
+        },
+        {
+          "id": "tomato-paste",
+          "quantity": 1,
+          "unit": "can"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Place ground beef in a pan on the stove on medium heat",
+    "Add flour and redistribute (cook) ground beef until all excess liquids are absorbed",
+    "Add garlic and salt (just arbitrary amounts listed--do to taste) while allowing one side to brown.",
+    "Periodically “flip” and cook all the ground beef evenly When all is either browned or cooked all the way through, you’re finished",
+    "Keep ½ lb of ground beef on the stove and bring down temperature of pan to a simmer (lowest temp possible)",
+    "Add 1 can (standard small can size) of tomato paste, mixing together with the ground beef",
+    "Add 1 lb (standard container size) of Prego sauce and mix all together and simmer for a few minutes"
+  ],
+  "source": {
+    "name": "Trevor's Mom"
+  },
+  "submittedBy": "Trevor"
+}
