@@ -1,0 +1,65 @@
+{
+  "slug": "tacos-ground-beef",
+  "title": "Tacos (Ground Beef)",
+  "tags": [
+    "beef"
+  ],
+  "servings": 8,
+  "prepMinutes": 5,
+  "cookMinutes": 25,
+  "description": "Simple Ground Beef Tacos",
+  "components": [
+    {
+      "name": null,
+      "ingredients": [
+        {
+          "id": "ground-beef",
+          "quantity": 1,
+          "unit": "lb"
+        },
+        {
+          "id": "taco-seasoning",
+          "quantity": 3,
+          "unit": "tbsp"
+        },
+        {
+          "id": "romaine-lettuce",
+          "quantity": 1,
+          "unit": "whole"
+        },
+        {
+          "id": "cherry-tomato",
+          "quantity": 8,
+          "unit": "oz"
+        },
+        {
+          "id": "mexican-cheese",
+          "quantity": 4,
+          "unit": "oz"
+        },
+        {
+          "id": "tortilla",
+          "quantity": 8,
+          "unit": "whole"
+        },
+        {
+          "id": "avocado",
+          "quantity": 1,
+          "unit": "whole"
+        }
+      ]
+    }
+  ],
+  "steps": [
+    "Place ground beef in a pan on the stove on medium heat",
+    "Add flour and redistribute (cook) ground beef until all excess liquids are absorbed",
+    "Add taco seasoning (just arbitrary amounts listed--do to taste)",
+    "Cook, allowing adequate browning - makes them taste great!",
+    "While cooking, shred lettuce and dice tomatoes",
+    "Warm tortillas, fill with taco meat, lettuce, tomatoes, and cheese"
+  ],
+  "source": {
+    "name": "Trevor's Mom"
+  },
+  "submittedBy": "Trevor"
+}
