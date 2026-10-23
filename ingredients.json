@@ -148,6 +148,7 @@
   {"id":"sour-cream","name":"Sour cream","category":"dairy"},
   {"id":"soy-sauce","name":"Soy sauce","category":"pantry","aliases":["tamari"]},
   {"id":"spaghetti","name":"Spaghetti","category":"pantry"},
+  {"id":"spaghetti-sauce","name":"Spaghetti Sauce","category":"pantry","aliases":["prego"]},
   {"id":"spinach","name":"Spinach","category":"produce","aliases":["baby spinach"]},
   {"id":"steak","name":"Steak","category":"meat","aliases":["sirloin","ribeye"]},
   {"id":"strawberry","name":"Strawberry","category":"produce"},
