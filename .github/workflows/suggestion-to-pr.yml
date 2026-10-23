@@ -21,8 +21,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       ISSUE_NUMBER: ${{ github.event.issue.number }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
           cache: npm
@@ -42,7 +42,7 @@ jobs:
           gh issue edit "$ISSUE_NUMBER" --add-label needs-changes
 
       - if: steps.apply.outputs.ok == 'true'
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           branch: suggestion/${{ github.event.issue.number }}-${{ steps.apply.outputs.slug }}
           title: Add ${{ steps.apply.outputs.title }}
